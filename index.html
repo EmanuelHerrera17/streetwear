@@ -43,7 +43,6 @@
             line-height: 1.6;
         }
 
-        /* Header */
         header {
             background: var(--white);
             color: var(--secondary);
@@ -58,7 +57,7 @@
             border-bottom: 1px solid var(--border);
         }
 
-        /* Background video (full-page, behind everything) */
+        /* video de fondo */
         #bgVideo {
             position: fixed;
             top: 0;
@@ -72,7 +71,6 @@
             filter: brightness(0.85) saturate(1.05);
         }
 
-        /* Optional overlay if you want a darker tint; leave hidden by default */
         .bg-video-overlay {
             position: fixed;
             inset: 0;
@@ -132,7 +130,6 @@
             box-shadow: 0 2px 8px rgba(220, 20, 60, 0.4);
         }
 
-        /* Modal Autenticación */
         .auth-modal {
             display: none;
             position: fixed;
@@ -150,7 +147,6 @@
             display: flex;
         }
 
-        /* Mostrar solo la pestaña activa en el modal de autenticación */
         .auth-tab-content {
             display: none;
         }
@@ -159,7 +155,6 @@
             display: block;
         }
 
-        /* Entry Modal (mode selection) */
         .entry-modal {
             display: none;
             position: fixed;
@@ -328,7 +323,6 @@
             color: var(--secondary);
         }
 
-        /* Sidebar Menu */
         .sidebar {
             position: fixed;
             left: -300px;
@@ -407,14 +401,12 @@
             display: block;
         }
 
-        /* Main Content */
         main {
             padding: 0;
             max-width: 100%;
             margin: 0 auto;
         }
 
-        /* Video Banner */
         .video-banner {
             width: 100%;
             height: 100vh;
@@ -548,7 +540,6 @@
             }
         }
 
-        /* Filter Section */
         .filter-section {
             margin-bottom: 3rem;
             display: flex;
@@ -579,7 +570,6 @@
             box-shadow: none;
         }
 
-        /* Products Grid */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -681,7 +671,7 @@
             transform: none;
         }
 
-        /* Shopping Cart */
+        /* Carrito */
         .cart-modal {
             display: none;
             position: fixed;
@@ -843,7 +833,7 @@
             color: #999;
         }
 
-        /* Loading & Messages */
+        /* Mensage de carga */
         .loading {
             text-align: center;
             padding: 2rem;
@@ -892,7 +882,7 @@
             }
         }
 
-        /* Admin Panel */
+        /* Panel de administrador */
         .admin-panel {
             display: none;
             position: fixed;
@@ -910,7 +900,6 @@
             display: flex;
         }
 
-        /* Role-based visibility */
         .admin-only {
             display: none;
         }
@@ -1078,7 +1067,6 @@
                 max-height: 340px;
             }
 
-            /* Cart modal full-screen on small devices */
             .cart-modal {
                 right: 0 !important;
                 width: 100%;
@@ -1218,7 +1206,7 @@
                 padding: 1rem 1.5rem;
             }
         }
-        /* Admin extra styles (polish) */
+    
         .image-previews { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px }
         .preview-wrap { position:relative; width:96px; height:96px; border-radius:10px; overflow:hidden }
         .thumb-img { width:100%; height:100%; object-fit:cover; display:block; border-radius:10px; border:1px solid rgba(240,242,245,0.9); box-shadow:0 8px 30px rgba(10,20,30,0.06) }
@@ -1229,7 +1217,6 @@
         .admin-content .admin-form { background:linear-gradient(180deg,#fff,#fbfbfb); border-radius:12px; padding:16px; border:1px solid #f0f2f5 }
         #productImagePreviews .preview-wrap:hover .thumb-btn { opacity:1 }
 
-        /* Admin modal polish */
         .admin-panel { backdrop-filter: blur(4px); }
         .admin-content { border-radius:12px; max-width:980px; padding:28px; box-shadow: 0 20px 60px rgba(10,20,30,0.18); border:1px solid rgba(0,0,0,0.06) }
         .admin-content h2 { font-weight:800; letter-spacing:0.6px; color:var(--secondary); margin-bottom:8px }
@@ -1243,11 +1230,11 @@
         .btn-primary { box-shadow: 0 8px 30px rgba(220,20,60,0.12) }
         .close-modal { font-size:1.4rem; background:transparent; border-radius:8px; padding:6px }
         @media (max-width:768px) { .admin-content { padding:18px; width:95% } }
-        /* Sidebar active states */
+        /* Estados de la barra lateral */
         .submenu-item.active { background: linear-gradient(90deg,var(--primary),var(--accent)); color: #fff; font-weight:700; border-radius:6px; padding-left:0.6rem }
         .sidebar-item.selected { background: rgba(220,20,60,0.06); }
         .sidebar-item.selected .sidebar-title { color: var(--primary); font-weight:800 }
-        /* Compact promotional banner */
+        /* Banner promocional */
         .compact-banner {
             width: 100%;
             background: linear-gradient(90deg, rgba(220,20,60,0.95), rgba(255,122,64,0.95));
@@ -1266,7 +1253,7 @@
             .compact-banner .banner-inner { flex-direction: column; text-align:center }
             .compact-banner h2 { font-size: 1.05rem }
         }
-        /* Product Carousel */
+        /* Carousel */
         .carousel-container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; position: relative }
         .carousel-header { display:flex; align-items:center; justify-content:space-between; margin: 24px 0 16px 0 }
         .carousel-header h3 { font-size: 1.4rem; font-weight:800; margin:0 }
@@ -1286,7 +1273,7 @@
             .carousel-slide { min-width: 200px }
             .carousel-header h3 { font-size: 1.15rem }
         }
-/* Botón PWA estilo grafiti */
+/* Botón de instalación */
 .pwa-install-container {
     margin: 0.7rem 1rem 0.2rem;
     display: flex;
@@ -1356,9 +1343,7 @@
     color: #00e676;
     text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
-    /* ====================================================
-   Colores
-   ==================================================== */
+ 
 :root {
     --primary: #e53935;      /* rojo principal */
     --accent: #ff1744;       /* rojo fuerte */
@@ -1376,7 +1361,6 @@ html, body {
     color: var(--text);
 }
 
-/* Header negro con texto blanco */
 header {
     background: var(--white);
     color: var(--secondary);
@@ -1389,7 +1373,6 @@ header {
     color: #f5f5f5 !important;
 }
 
-/* Sidebar oscuro */
 .sidebar {
     background-color: #000000;
 }
@@ -1410,14 +1393,12 @@ header {
     color: #ffffff;
 }
 
-/* Hero / banners: feeling Jordan con rojo */
 .hero {
     background:
         radial-gradient(circle at top, rgba(229,57,53,0.38), transparent 60%),
         #000000 !important;
 }
 
-/* Banner compacto */
 .compact-banner {
     background: linear-gradient(90deg, #e53935, #b71c1c) !important;
     color: #ffffff;
@@ -1434,7 +1415,7 @@ header {
     color: var(--text);
 }
 
-/* Grid de productos oscura  */
+/* Grid de productos  */
 .products-grid {
     background: transparent;
     padding-bottom: 3rem;
@@ -1445,7 +1426,7 @@ header {
     border-color: #333333;
 }
 
-/* Imagen de producto: resalta sobre el fondo negro */
+/* Imagen de producto */
 .product-image {
     background-color: #050505;
 }
@@ -1502,7 +1483,7 @@ header {
     color: #ff5252;
 }
 
-/* Modales (login, producto, admin) sobre fondo oscuro */
+/* Modales (login, producto, admin) */
 .auth-modal .auth-content,
 #productModal .auth-content,
 .admin-content {
@@ -1510,7 +1491,6 @@ header {
     color: #f5f5f5;
 }
 
-/* Inputs sobre oscuro */
 .form-group input,
 .form-group select,
 .form-row input,
@@ -1526,7 +1506,6 @@ header {
     color: #777777;
 }
 
-/* Botones estilo Jordan: rojo -> blanco al hover */
 .btn-primary,
 .btn-checkout,
 .btn-add-cart,
@@ -1546,7 +1525,6 @@ header {
     color: #000000;
 }
 
-/* Botón secundario oscuro */
 .btn-secondary {
     background: #111111;
     color: #f5f5f5;
@@ -1558,7 +1536,6 @@ header {
     color: #000000;
 }
 
-/* Iconos del header */
 .icon-btn {
     color: #f5f5f5;
 }
